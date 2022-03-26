@@ -1,0 +1,14 @@
+
+<div class="wrapper">
+    <form class="form"  [formGroup]="form" (submit)="onSubmit()">
+      <div class="pageTitle title">SIGN UP!</div>
+      <div class="secondaryTitle title">ENTER YOUR DETAILS</div>
+      <input formControlName="name" type="text" class="name formEntry" placeholder="Name" />
+      <input formControlName="email" type="email" class="email formEntry" placeholder="Email"/>
+      <input formControlName="password" type="password" class="password formEntry" placeholder="Password"/>
+      <input formControlName="contact" type="tel" class="contact formEntry" placeholder="Contact"/>
+      <input type="checkbox" class="termsConditions" value="Term">
+      <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span style="color: #0e3721">Privacy Policy</span>.</label><br>
+      <button type="submit" class="submit formEntry">Submit</button>
+    </form>
+  </div>
